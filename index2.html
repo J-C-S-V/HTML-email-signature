@@ -1,0 +1,94 @@
+<!-- Basic layout -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>HTML email signature</title>
+    <style>
+      body {
+        font-family: sans-serif, Arial, Helvetica;
+        margin: 0;
+        padding: 0;
+        font-size: 62.5%;
+      }
+
+      .email-signature-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+        color: rgb(53, 53, 53);
+      }
+
+      table {
+        width: 100%;
+      }
+
+      td {
+        vertical-align: middle;
+      }
+
+      .image-td {
+        width: 100px;
+        text-align: center;
+      }
+
+      .image-td img {
+        width: 9rem;
+        border-radius: 50%;
+        border: 2px solid rebeccapurple;
+      }
+
+      .info-td {
+        padding-left: 20px;
+        border-left: 4px solid rebeccapurple;
+      }
+
+      .info-td h1 {
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+
+      .info-td h2 {
+        margin-top: 0;
+      }
+
+      .info-td p {
+        margin: 0;
+        font-size: 1rem;
+      }
+
+      .info-td a {
+        text-decoration: none;
+        color: rebeccapurple;
+        display: block;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="email-signature-container">
+      <tr>
+        <td class="image-td">
+          <img
+            src="https://i.postimg.cc/267N104n/1e3f7fad-4d0b-462c-9e4b-ac92e3ddaede.jpg"
+            alt="photo"
+          />
+        </td>
+        <td class="info-td">
+          <h1>Jessica Smith</h1>
+          <h2>Web Developer</h2>
+          <a href="https://example.com">Website: www.example.com</a>
+          <a href="mailto:example@gmail.com">Email: example@gmail.com</a>
+          <p href="tel:+123456789">Phone: 123-456-7890</p>
+          <p>Address: Street name 19, 12345, City, Country</p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
