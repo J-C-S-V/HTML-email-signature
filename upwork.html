@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      /* body {
+        margin: 0;
+      }
+
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+        margin: 0;
+      }
+
+      img {
+        border: 0;
+        display: block;
+      } */
+    </style>
+  </head>
+  <body>
+    <table
+      style="
+        font-family: Arial, sans-serif;
+        color: #000000;
+        max-width: 500px;
+        background: transparent !important;
+      "
+      class="ng-scope"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+    >
+      <tbody>
+        <tr>
+          <td
+            style="
+              font-size: 10pt;
+              font-family: Arial, sans-serif;
+              color: #000000;
+              line-height: 12pt;
+              padding-right: 20px;
+              text-align: center;
+              width: 170px;
+            "
+            width="170"
+            valign="top"
+            align="center"
+          >
+            <p
+              ng-if="showField('photo')"
+              style="margin-bottom: 40px"
+              class="ng-scope"
+            >
+              <img
+                alt="Photo"
+                style="max-width: 200px; height: auto; border: 0"
+                src="./assets/Steve - Mast Group.png"
+                width="200"
+                border="0"
+              />
+              <br /><br />
+            </p>
+          </td>
+
+          <td
+            style="font-family: Arial, sans-serif; padding-bottom: 10px"
+            valign="top"
+          >
+            <table
+              style="
+                font-size: 9pt; /*! background-color: blue; */
+                width: 2rem;
+                height: 12rem;
+                margin-right: 1rem;
+              "
+            >
+              <tbody>
+                <tr>
+                  <td style="height: 25px"></td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      width: 1rem;
+                      background-color: red;
+                      border-radius: 3px;
+                    "
+                  ></td>
+                  <td
+                    rowspan="2"
+                    style="width: 1rem; background-color: red"
+                  ></td>
+                  <td style="width: 1rem; background-color: red"></td>
+                </tr>
+                <tr>
+                  <td style="height: 25px"></td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+          <td
+            style="font-family: Arial, sans-serif; padding-bottom: 10px"
+            valign="top"
+          >
+            <p
+              style="
+                font-size: 20pt;
+                color: #000000;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin-bottom: 5px;
+              "
+            >
+              <strong class="ng-binding">Steve Mast</strong>
+            </p>
+            <p
+              ng-if="showField('title')"
+              style="
+                font-size: 12pt;
+                color: #000000;
+                text-align: center;
+                margin-top: 0;
+                margin-bottom: 26px;
+              "
+              class="ng-binding ng-scope"
+            >
+              CEO
+            </p>
+
+            <p
+              ng-if="showField('phone')"
+              style="font-size: 9pt"
+              class="ng-binding ng-scope"
+            >
+              <img
+                ng-src="https://www.mail-signatures.com/signature-generator/img/templates/modern-all-inclusive/phone-icon.png"
+                alt="phone-icon"
+                style="border: 0; height: 15px; width: 15px"
+                src="https://www.mail-signatures.com/signature-generator/img/templates/modern-all-inclusive/phone-icon.png"
+                width="12"
+                height="12"
+                border="0"
+              />&nbsp; (800) 555-0199
+            </p>
+            <p
+              ng-if="showField('email')"
+              style="font-size: 9pt"
+              class="ng-binding ng-scope"
+            >
+              <img
+                ng-src="https://www.mail-signatures.com/signature-generator/img/templates/modern-all-inclusive/email-icon.png"
+                alt="phone-icon"
+                style="border: 0; height: 15px; width: 15px"
+                src="https://www.mail-signatures.com/signature-generator/img/templates/modern-all-inclusive/email-icon.png"
+                width="12"
+                height="12"
+                border="0"
+              />&nbsp; john.doe@my-company.com<br />
+            </p>
+            <p
+              ng-if="isAnyFieldEntered('company, address1, address2')"
+              style="font-size: 9pt"
+              class="ng-binding ng-scope"
+            >
+              <img
+                ng-src="https://www.mail-signatures.com/signature-generator/img/templates/modern-all-inclusive/address-icon.png"
+                alt="phone-icon"
+                style="border: 0; height: 15px; width: 15px"
+                src="https://www.mail-signatures.com/signature-generator/img/templates/modern-all-inclusive/address-icon.png"
+                width="12"
+                height="12"
+                border="0"
+              />&nbsp; Street, City, Zip Code, Country<br />
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
