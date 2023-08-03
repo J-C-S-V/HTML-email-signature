@@ -8,84 +8,65 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
     />
     <title>HTML email signature</title>
-    <style>
-      body {
-        font-family: sans-serif, Arial, Helvetica;
-        margin: 0;
-        padding: 0;
-        font-size: 62.5%;
-      }
-
-      .email-signature-container {
+  </head>
+  <body
+    style="
+      font-family: sans-serif, Arial, Helvetica;
+      margin: 0;
+      padding: 0;
+      font-size: 62.5%;
+    "
+  >
+    <table
+      class="email-signature-container"
+      style="
         width: 100%;
         margin: 0 auto;
         padding: 20px;
         box-sizing: border-box;
         color: rgb(53, 53, 53);
-      }
-
-      table {
-        width: 100%;
-      }
-
-      td {
-        vertical-align: middle;
-      }
-
-      .image-td {
-        width: 100px;
-        text-align: center;
-        padding-right: 15px;
-      }
-
-      .image-td img {
-        width: 9rem;
-        border-radius: 50%;
-        border: 2px solid rebeccapurple;
-      }
-
-      .info-td {
-        padding-left: 20px;
-        border-left: 4px solid rebeccapurple;
-      }
-
-      .info-td h1 {
-        margin-top: 0;
-        margin-bottom: 5px;
-      }
-
-      .info-td h2 {
-        margin-top: 0;
-      }
-
-      .info-td p {
-        margin: 0;
-        font-size: 1rem;
-      }
-
-      .info-td a {
-        text-decoration: none;
-        color: rebeccapurple;
-        display: block;
-        font-size: 1rem;
-      }
-    </style>
-  </head>
-  <body>
-    <table class="email-signature-container">
+      "
+    >
       <tr>
-        <td class="image-td">
+        <td
+          class="image-td"
+          style="width: 100px; text-align: center; padding-right: 15px"
+        >
           <img
             src="https://i.postimg.cc/267N104n/1e3f7fad-4d0b-462c-9e4b-ac92e3ddaede.jpg"
             alt="photo"
+            style="border-radius: 50%; border: 2px solid rebeccapurple"
+            height="165"
+            width="165"
           />
         </td>
-        <td class="info-td">
-          <h1>Jessica Smith</h1>
-          <h2>Web Developer</h2>
-          <a href="https://example.com">www.example.com</a>
-          <a href="mailto:example@gmail.com">emailexample@gmail.com</a>
-          <p href="tel:+123456789">123-456-7890</p>
+        <td
+          class="info-td"
+          style="padding-left: 20px; border-left: 4px solid rebeccapurple"
+        >
+          <h1 style="margin-top: 0; margin-bottom: 5px">Jessica Smith</h1>
+          <h2 style="margin-top: 0">Web Developer</h2>
+          <a
+            href="https://example.com"
+            style="
+              text-decoration: none;
+              color: rebeccapurple;
+              display: block;
+              font-size: 1rem;
+            "
+            >www.example.com</a
+          >
+          <a
+            href="mailto:example@gmail.com"
+            style="
+              text-decoration: none;
+              color: rebeccapurple;
+              display: block;
+              font-size: 1rem;
+            "
+            >emailexample@gmail.com</a
+          >
+          <p style="font-size: 1rem" href="tel:+123456789">123-456-7890</p>
           <p>Street name 19, 12345, City, Country</p>
         </td>
       </tr>

@@ -1,0 +1,10 @@
+Todo esto debe ser con estilos en línea.
+
+<a></a>
+
+text-decoration: none;
+
+<table></table>
+
+border-collapse: collapse; // Para que se unan los <td>
+
