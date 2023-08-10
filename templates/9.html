@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <title>Email Signature</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <table
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      style="
+        font-family: Arial, sans-serif;
+        color: #5288d4;
+        max-width: 440px;
+        background: transparent !important;
+      "
+      class="ng-scope"
+    >
+      <tbody>
+        <tr>
+          <td
+            colspan="2"
+            width="440"
+            style="padding-bottom: 4px; border-bottom: 1px solid #5288d4"
+          >
+            <span
+              style="
+                font-size: 16pt;
+                color: #2c4a0d;
+                font-family: Arial, sans-serif;
+                line-height: 18pt;
+              "
+              ><strong class="ng-binding">John Doe</strong></span
+            >
+            <!-- ngIf: showField('title') --><span
+              ng-if="showField('title')"
+              style="font-size: 11pt; color: #5288d4; line-height: 13pt"
+              class="ng-binding ng-scope"
+              ><br />Sales &amp; Marketing Director</span
+            ><!-- end ngIf: showField('title') -->
+          </td>
+        </tr>
+        <tr>
+          <!-- ngIf: showField('photo') -->
+          <td
+            ng-if="showField('photo')"
+            width="138"
+            style="padding-top: 15px"
+            class="ng-scope"
+          >
+            <p style="padding: 0px; margin: 0px">
+              <img
+                border="0"
+                ng-src="https://www.mail-signatures.com/signature-generator/img/templates/fresh-wine/photo.png"
+                alt="Photo"
+                width="88"
+                style="max-width: 88px; height: auto; border: 0"
+                src="https://www.mail-signatures.com/signature-generator/img/templates/fresh-wine/photo.png"
+              />
+            </p>
+          </td>
+          <!-- end ngIf: showField('photo') -->
+          <td style="padding-top: 15px">
+            <!-- ngIf: showField('phone') -->
+            <p
+              ng-if="showField('phone')"
+              style="
+                line-height: 12px;
+                padding-bottom: 2px;
+                margin-bottom: 0px;
+                padding-top: 0px;
+                margin-top: 0px;
+              "
+              class="ng-scope"
+            >
+              <span style="font-size: 9pt; color: #3b3b3b">T:</span>
+              <span style="font-size: 9pt; color: #3b3b3b" class="ng-binding"
+                >(800) 555-0199</span
+              >
+            </p>
+            <!-- end ngIf: showField('phone') -->
+            <!-- ngIf: showField('mobile') -->
+            <p
+              ng-if="showField('mobile')"
+              style="
+                line-height: 12px;
+                padding-bottom: 2px;
+                margin-bottom: 0px;
+                padding-top: 0px;
+                margin-top: 0px;
+              "
+              class="ng-scope"
+            >
+              <span style="font-size: 9pt; color: #3b3b3b">M:</span>
+              <span style="font-size: 9pt; color: #3b3b3b" class="ng-binding"
+                >(800) 555-0299</span
+              >
+            </p>
+            <!-- end ngIf: showField('mobile') -->
+
+            <!-- ngIf: isAnyFieldEntered('email', 'website') -->
+            <p
+              ng-if="isAnyFieldEntered('email', 'website')"
+              style="
+                line-height: 12px;
+                padding-bottom: 2px;
+                margin-bottom: 0px;
+                padding-top: 0px;
+                margin-top: 0px;
+              "
+              class="ng-scope"
+            >
+              <!-- ngIf: showField('email') --><span
+                ng-if="showField('email')"
+                class="ng-scope"
+              >
+                <a
+                  href="mailto:john.doe@my-company.com"
+                  style="text-decoration: none; font-size: 9pt; color: #3b3b3b"
+                  ><span
+                    style="
+                      text-decoration: none;
+                      font-size: 9pt;
+                      color: #3b3b3b;
+                    "
+                    class="ng-binding"
+                    >john.doe@my-company.com</span
+                  ></a
+                >
+                <!-- ngIf: showField('website') --><span
+                  ng-if="showField('website')"
+                  class="ng-scope"
+                >
+                  - </span
+                ><!-- end ngIf: showField('website') --> </span
+              ><!-- end ngIf: showField('email') -->
+              <!-- ngIf: showField('website') --><span
+                ng-if="showField('website')"
+                class="ng-scope"
+              >
+                <a
+                  href="http://www.my-company.com"
+                  target="_blank"
+                  rel="noopener"
+                  style="
+                    font-size: 9pt;
+                    color: #2c4a0d !important;
+                    text-decoration: none;
+                  "
+                  ><span
+                    style="
+                      font-size: 9pt;
+                      color: #2c4a0d !important;
+                      text-decoration: none;
+                    "
+                    class="ng-binding"
+                    >www.my-company.com</span
+                  ></a
+                > </span
+              ><!-- end ngIf: showField('website') -->
+            </p>
+            <!-- end ngIf: isAnyFieldEntered('email', 'website') -->
+
+            <!-- ngIf: isAnyFieldEntered('company, address1, address2') -->
+            <p
+              ng-if="isAnyFieldEntered('company, address1, address2')"
+              style="
+                line-height: 12px;
+                padding-bottom: 2px;
+                margin-bottom: 0px;
+                padding-top: 0px;
+                margin-top: 0px;
+              "
+              class="ng-scope"
+            >
+              <!-- ngIf: showField('company') --><span
+                ng-if="showField('company')"
+                style="font-size: 9pt; color: #3b3b3b; font-weight: bold"
+                class="ng-binding ng-scope"
+                >My Company</span
+              ><!-- end ngIf: showField('company') -->
+              <!-- ngIf: showField('address1') --><span
+                ng-if="showField('address1')"
+                style="font-size: 9pt; color: #3b3b3b"
+                class="ng-binding ng-scope"
+                >Street, City</span
+              ><!-- end ngIf: showField('address1') --><!-- ngIf: showField('address1') --><span
+                ng-if="showField('address1')"
+                style="font-size: 9pt; color: #3b3b3b"
+                class="ng-scope"
+                >, </span
+              ><!-- end ngIf: showField('address1') -->
+              <!-- ngIf: showField('address2') --><span
+                style="font-size: 9pt; color: #3b3b3b"
+                ng-if="showField('address2')"
+                class="ng-binding ng-scope"
+                >Zip Code, Country</span
+              ><!-- end ngIf: showField('address2') -->
+            </p>
+            <!-- end ngIf: isAnyFieldEntered('company, address1, address2') -->
+
+            <p
+              style="
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+                padding-top: 0px;
+                margin-top: 5px;
+              "
+            >
+              <!-- ngIf: showField('facebookURL') --><span
+                ng-if="showField('facebookURL')"
+                class="ng-scope"
+                ><a
+                  href="https://www.facebook.com/MyCompany"
+                  target="_blank"
+                  rel="noopener"
+                  ><img
+                    border="0"
+                    width="22"
+                    ng-src="https://www.mail-signatures.com/signature-generator/img/templates/fresh-wine/fb.png"
+                    alt="facebook icon"
+                    style="border: 0; height: 22px; width: 22px"
+                    src="https://www.mail-signatures.com/signature-generator/img/templates/fresh-wine/fb.png" /></a
+                >&nbsp;</span
+              ><!-- end ngIf: showField('facebookURL') -->
+              <!-- ngIf: showField('twitterURL') --><span
+                ng-if="showField('twitterURL')"
+                class="ng-scope"
+                ><a
+                  href="https://twitter.com/MyCompany404"
+                  target="_blank"
+                  rel="noopener"
+                  ><img
+                    border="0"
+                    width="22"
+                    ng-src="https://www.mail-signatures.com/signature-generator/img/templates/fresh-wine/tt.png"
+                    alt="twitter icon"
+                    style="border: 0; height: 22px; width: 22px"
+                    src="https://www.mail-signatures.com/signature-generator/img/templates/fresh-wine/tt.png" /></a
+                >&nbsp;</span
+              ><!-- end ngIf: showField('twitterURL') -->
+              <!-- ngIf: showField('youtubeURL') --><span
+                ng-if="showField('youtubeURL')"
+                class="ng-scope"
+                ><a
+                  href="https://www.youtube.com/user/MyCompanyChannel"
+                  target="_blank"
+                  rel="noopener"
+                  ><img
+                    border="0"
+                    width="22"
+                    ng-src="https://www.mail-signatures.com/signature-generator/img/templates/fresh-wine/yt.png"
+                    alt="youtube icon"
+                    style="border: 0; height: 22px; width: 22px"
+                    src="https://www.mail-signatures.com/signature-generator/img/templates/fresh-wine/yt.png" /></a
+                >&nbsp;</span
+              ><!-- end ngIf: showField('youtubeURL') -->
+              <!-- ngIf: showField('linkedinURL') --><span
+                ng-if="showField('linkedinURL')"
+                class="ng-scope"
+                ><a
+                  href="https://www.linkedin.com/company/mycompany404"
+                  target="_blank"
+                  rel="noopener"
+                  ><img
+                    border="0"
+                    width="22"
+                    ng-src="https://www.mail-signatures.com/signature-generator/img/templates/fresh-wine/ln.png"
+                    alt="linkedin icon"
+                    style="border: 0; height: 22px; width: 22px"
+                    src="https://www.mail-signatures.com/signature-generator/img/templates/fresh-wine/ln.png" /></a
+                >&nbsp;</span
+              ><!-- end ngIf: showField('linkedinURL') -->
+              <!-- ngIf: showField('instagramURL') --><span
+                ng-if="showField('instagramURL')"
+                class="ng-scope"
+                ><a
+                  href="https://www.instagram.com/mycompany404/"
+                  target="_blank"
+                  rel="noopener"
+                  ><img
+                    border="0"
+                    width="22"
+                    ng-src="https://www.mail-signatures.com/signature-generator/img/templates/fresh-wine/it.png"
+                    alt="instagram icon"
+                    style="border: 0; height: 22px; width: 22px"
+                    src="https://www.mail-signatures.com/signature-generator/img/templates/fresh-wine/it.png" /></a
+                >&nbsp;</span
+              ><!-- end ngIf: showField('instagramURL') -->
+              <!-- ngIf: showField('pinterestURL') --><span
+                ng-if="showField('pinterestURL')"
+                class="ng-scope"
+                ><a
+                  href="https://pinterest.com/mycompany404/"
+                  target="_blank"
+                  rel="noopener"
+                  ><img
+                    border="0"
+                    width="22"
+                    ng-src="https://www.mail-signatures.com/signature-generator/img/templates/fresh-wine/pt.png"
+                    alt="pinterest icon"
+                    style="border: 0; height: 22px; width: 22px"
+                    src="https://www.mail-signatures.com/signature-generator/img/templates/fresh-wine/pt.png" /></a></span
+              ><!-- end ngIf: showField('pinterestURL') -->
+            </p>
+          </td>
+        </tr>
+        <!-- ngIf: showField('banner') -->
+        <tr ng-if="showField('banner')" class="ng-scope">
+          <td colspan="2" style="padding-top: 15px; margin-bottom: 0">
+            <!-- ngIf: showField('bannerURL') --><a
+              ng-if="showField('bannerURL')"
+              href="https://www.codetwo.com/email-signatures/"
+              target="_blank"
+              rel="noopener"
+              class="ng-scope"
+              ><img
+                border="0"
+                ng-src="https://www.mail-signatures.com/signature-generator/img/templates/fresh-wine/banner.png"
+                alt="Banner"
+                width="440"
+                style="max-width: 440px; height: auto; border: 0"
+                src="https://www.mail-signatures.com/signature-generator/img/templates/fresh-wine/banner.png" /></a
+            ><!-- end ngIf: showField('bannerURL') -->
+            <!-- ngIf: !showField('bannerURL') -->
+          </td>
+        </tr>
+        <!-- end ngIf: showField('banner') -->
+        <!-- ngIf: showField('disclaimer') -->
+        <tr ng-if="showField('disclaimer')" class="ng-scope">
+          <td colspan="2" style="padding-top: 15px">
+            <p
+              style="
+                font-size: 8pt;
+                line-height: 9pt;
+                color: #3b3b3b;
+                font-family: Arial, sans-serif;
+                text-align: justify;
+              "
+              class="ng-binding"
+            >
+              The content of this email is confidential and intended for the
+              recipient specified in message only. It is strictly forbidden to
+              share any part of this message with any third party, without a
+              written consent of the sender. If you received this message by
+              mistake, please reply to this message and follow with its
+              deletion, so that we can ensure such a mistake does not occur in
+              the future.
+            </p>
+          </td>
+        </tr>
+        <!-- end ngIf: showField('disclaimer') -->
+      </tbody>
+    </table>
+  </body>
+</html>
